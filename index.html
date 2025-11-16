@@ -1,51 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ilica 40</title>
-  <meta name="description" content="Ilica 40 — Web stranica u izradi" />
+  <title>Ilica 40 — Stan na prodaju</title>
+  <meta name="description" content="Prodajni oglas stana na Ilici 40. Pogledaj fotografije i kontakt informacije." />
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- GLightbox CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
   <link rel="icon" href="/favicon.ico">
+  <!-- hreflang za tražilice / pretraživače -->
+  <link rel="alternate" hreflang="hr" href="https://ilica40.com/" />
+  <link rel="alternate" hreflang="en" href="https://ilica40.com/en/" />
+  <link rel="alternate" hreflang="de" href="https://ilica40.com/de/" />
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
       <h1 class="logo">Ilica 40</h1>
       <nav class="main-nav">
-        <a href="/">Početna</a>
-        <a href="/about.html">O projektu</a>
-        <a href="/contact.html">Kontakt</a>
+        <a href="/">HR</a>
+        <a href="/en/">EN</a>
+        <a href="/de/">DE</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap">
     <section class="hero">
-      <h2>Dobrodošli na ilica40.com</h2>
-      <p>Ovo je početna verzija stranice. Radimo na sadržaju — uskoro više.</p>
-      <p><a class="btn" href="/about.html">Saznaj više</a></p>
+      <h2>Stan na prodaju — Ilica 40</h2>
+      <p>Kratki opis stana. 2S+DB, 75 m², centralna lokacija.</p>
     </section>
 
     <section class="content">
-      <h3>Što slijedi?</h3>
-      <ul>
-        <li>Dodati više stranica (o nama, kontakt, galerija)</li>
-        <li>Uvesti jednostavnu navigaciju i kontakt formu</li>
-        <li>Po potrebi prebaciti na Jekyll ili Hugo ako zatreba blog</li>
-      </ul>
+      <h3>Fotografije</h3>
+      <p>Klikni za veći prikaz.</p>
+
+      <!-- Galerija: slike smjesti u assets/images/ -->
+      <div class="gallery">
+        <!-- primjer korištenja responsive slike: napravite .webp i .jpg verzije te 3 veličine po slici -->
+        <a href="assets/images/photo1-large.webp" class="glightbox" data-glightbox="title: Dnevni boravak;">
+          <img
+            src="assets/images/photo1-medium.jpg"
+            srcset="assets/images/photo1-small.jpg 400w,
+                    assets/images/photo1-medium.jpg 800w,
+                    assets/images/photo1-large.jpg 1200w"
+            sizes="(max-width:700px) 100vw, 50vw"
+            alt="Dnevni boravak"
+            loading="lazy"
+          />
+        </a>
+
+        <a href="assets/images/photo2-large.webp" class="glightbox" data-glightbox="title: Kuhinja;">
+          <img
+            src="assets/images/photo2-medium.jpg"
+            srcset="assets/images/photo2-small.jpg 400w,
+                    assets/images/photo2-medium.jpg 800w,
+                    assets/images/photo2-large.jpg 1200w"
+            sizes="(max-width:700px) 100vw, 50vw"
+            alt="Kuhinja"
+            loading="lazy"
+          />
+        </a>
+
+        <!-- Dodaj ostale slike po istom obrascu -->
+      </div>
+
+      <h3>Opis</h3>
+      <p>Detaljan opis stana: površina, etaža, grijanje, namještaj, energetski razred, kontakt.</p>
+
+      <h3>Kontakt</h3>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label>Ime:<br><input type="text" name="name" required></label><br>
+        <label>Email:<br><input type="email" name="_replyto" required></label><br>
+        <label>Poruka:<br><textarea name="message" rows="4" required></textarea></label><br>
+        <button class="btn" type="submit">Pošalji</button>
+      </form>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <small>© <span id="year"></span> Ilica 40. Sva prava pridržana.</small>
+      <small>© <span id="year"></span> Ilica 40</small>
     </div>
   </footer>
 
-  <script>
-    // automatsko postavljanje godine
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <!-- GLightbox JS (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="assets/js/gallery.js"></script>
 </body>
 </html>
