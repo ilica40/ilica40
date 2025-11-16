@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="hr">
 <head>
-    <meta charset="UTF-8">
-    <title>Ilica 40</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ilica 40</title>
+  <meta name="description" content="Ilica 40 — Web stranica u izradi" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="/favicon.ico">
 </head>
 <body>
-    <h1>Dobrodošli na ilica40.com</h1>
-    <p>Web stranica u izradi.</p>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="logo">Ilica 40</h1>
+      <nav class="main-nav">
+        <a href="/">Početna</a>
+        <a href="/about.html">O projektu</a>
+        <a href="/contact.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h2>Dobrodošli na ilica40.com</h2>
+      <p>Ovo je početna verzija stranice. Radimo na sadržaju — uskoro više.</p>
+      <p><a class="btn" href="/about.html">Saznaj više</a></p>
+    </section>
+
+    <section class="content">
+      <h3>Što slijedi?</h3>
+      <ul>
+        <li>Dodati više stranica (o nama, kontakt, galerija)</li>
+        <li>Uvesti jednostavnu navigaciju i kontakt formu</li>
+        <li>Po potrebi prebaciti na Jekyll ili Hugo ako zatreba blog</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="year"></span> Ilica 40. Sva prava pridržana.</small>
+    </div>
+  </footer>
+
+  <script>
+    // automatsko postavljanje godine
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
