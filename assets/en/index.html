@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ilica 40 — Apartment for sale</title>
+  <meta name="description" content="Apartment for sale at Ilica 40. View photos and contact info." />
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <link rel="alternate" hreflang="hr" href="https://ilica40.com/" />
+  <link rel="alternate" hreflang="en" href="https://ilica40.com/en/" />
+  <link rel="alternate" hreflang="de" href="https://ilica40.com/de/" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="logo">Ilica 40</h1>
+      <nav class="main-nav">
+        <a href="/">HR</a>
+        <a href="/en/">EN</a>
+        <a href="/de/">DE</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h2>Apartment for sale — Ilica 40</h2>
+      <p>Short description: 2 rooms + dining, 75 m², central location.</p>
+    </section>
+
+    <section class="content">
+      <h3>Photos</h3>
+      <div class="gallery">
+        <!-- reuse same images in assets/images/ -->
+        <a href="/assets/images/photo1-large.webp" class="glightbox" data-glightbox="title: Living room;">
+          <img src="/assets/images/photo1-medium.jpg"
+               srcset="/assets/images/photo1-small.jpg 400w, /assets/images/photo1-medium.jpg 800w, /assets/images/photo1-large.jpg 1200w"
+               sizes="(max-width:700px) 100vw, 50vw"
+               alt="Living room" loading="lazy" />
+        </a>
+        <!-- ... -->
+      </div>
+
+      <h3>Contact</h3>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label>Name:<br><input type="text" name="name" required></label><br>
+        <label>Email:<br><input type="email" name="_replyto" required></label><br>
+        <label>Message:<br><textarea name="message" rows="4" required></textarea></label><br>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap"><small>© <span id="year"></span> Ilica 40</small></div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="/assets/js/gallery.js"></script>
+</body>
+</html>
