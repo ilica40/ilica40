@@ -1,93 +1,154 @@
-<!doctype html>
-<html lang="hr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ilica 40 — Stan na prodaju</title>
-  <meta name="description" content="Prodajni oglas stana na Ilici 40. Pogledaj fotografije i kontakt informacije." />
-  <link rel="stylesheet" href="assets/css/style.css">
-  <!-- GLightbox CSS (CDN) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-  <link rel="icon" href="/favicon.ico">
-  <!-- hreflang za tražilice / pretraživače -->
-  <link rel="alternate" hreflang="hr" href="https://ilica40.com/" />
-  <link rel="alternate" hreflang="en" href="https://ilica40.com/en/" />
-  <link rel="alternate" hreflang="de" href="https://ilica40.com/de/" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="wrap">
-      <h1 class="logo">Ilica 40</h1>
-      <nav class="main-nav">
-        <a href="/">HR</a>
-        <a href="/en/">EN</a>
-        <a href="/de/">DE</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="wrap">
-    <section class="hero">
-      <h2>Stan na prodaju — Ilica 40</h2>
-      <p>Kratki opis stana. 2S+DB, 75 m², centralna lokacija.</p>
-    </section>
-
-    <section class="content">
-      <h3>Fotografije</h3>
-      <p>Klikni za veći prikaz.</p>
-
-      <!-- Galerija: slike smjesti u assets/images/ -->
-      <div class="gallery">
-        <!-- primjer korištenja responsive slike: napravite .webp i .jpg verzije te 3 veličine po slici -->
-        <a href="assets/images/photo1-large.webp" class="glightbox" data-glightbox="title: Dnevni boravak;">
-          <img
-            src="assets/images/photo1-medium.jpg"
-            srcset="assets/images/photo1-small.jpg 400w,
-                    assets/images/photo1-medium.jpg 800w,
-                    assets/images/photo1-large.jpg 1200w"
-            sizes="(max-width:700px) 100vw, 50vw"
-            alt="Dnevni boravak"
-            loading="lazy"
-          />
-        </a>
-
-        <a href="assets/images/photo2-large.webp" class="glightbox" data-glightbox="title: Kuhinja;">
-          <img
-            src="assets/images/photo2-medium.jpg"
-            srcset="assets/images/photo2-small.jpg 400w,
-                    assets/images/photo2-medium.jpg 800w,
-                    assets/images/photo2-large.jpg 1200w"
-            sizes="(max-width:700px) 100vw, 50vw"
-            alt="Kuhinja"
-            loading="lazy"
-          />
-        </a>
-
-        <!-- Dodaj ostale slike po istom obrascu -->
-      </div>
-
-      <h3>Opis</h3>
-      <p>Detaljan opis stana: površina, etaža, grijanje, namještaj, energetski razred, kontakt.</p>
-
-      <h3>Kontakt</h3>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <label>Ime:<br><input type="text" name="name" required></label><br>
-        <label>Email:<br><input type="email" name="_replyto" required></label><br>
-        <label>Poruka:<br><textarea name="message" rows="4" required></textarea></label><br>
-        <button class="btn" type="submit">Pošalji</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <small>© <span id="year"></span> Ilica 40</small>
-    </div>
-  </footer>
-
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <!-- GLightbox JS (CDN) -->
-  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-  <script src="assets/js/gallery.js"></script>
-</body>
-</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>index</title></head>
+<body style="background-color: rgb(255, 251, 226); color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#551a8b">
+<div style="text-align: right;"><div style="padding: 10px; text-align: right;">
+<a href="file:///D:/Web/index.html" style="margin-right: 5px;">
+<img src="pictures/hr.png" alt="Hrvatski" style="width: 40px; height: 20px; vertical-align: middle;">
+<span style="font-weight: bold; font-family: Helvetica,Arial,sans-serif;">hr</span>
+</a>
+<a href="indexen.html" style="margin-right: 5px;">
+<img src="pictures/en.png" alt="English" style="width: 38px; height: 20px; vertical-align: middle;">
+<span style="font-weight: bold; font-family: Helvetica,Arial,sans-serif;">en</span>
+</a>
+<a href="indexde.html" style="margin-right: 5px;">
+<img src="pictures/deu.png" alt="Deutsch" style="width: 30px; height: 20px; vertical-align: middle;">
+<span style="font-weight: bold; font-family: Helvetica,Arial,sans-serif;">de</span>
+</a>
+<a href="indexfr.html" style="margin-right: 5px;">
+<img src="pictures/fr.png" alt="Fran�ais" style="width: 30px; height: 20px; vertical-align: middle;">
+<span style="font-weight: bold; font-family: Helvetica,Arial,sans-serif;">fr</span>
+</a>
+<a href="indexit.html" style="margin-right: 5px;">
+<img src="pictures/it.png" alt="Italiano" style="width: 30px; height: 25px; vertical-align: middle;">
+<span style="font-weight: bold; font-family: Helvetica,Arial,sans-serif;">it</span>
+</a>
+<a href="indexuk.html">
+<img src="pictures/ukr.png" alt="&#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;" style="width: 30px; height: 20px; vertical-align: middle;">
+<span style="font-weight: bold; font-family: Helvetica,Arial,sans-serif;">uk</span></a><a href="indexuk.html">
+</a>
+</div>
+</div>
+<br style="font-family: Helvetica,Arial,sans-serif;">
+<h1 style="text-align: center;"><span style="font-family: Arial;">210 m� u Ilici nad ulazom u
+De&#382;manov prolaz</span></h1>
+<span style="font-family: Arial;">Hvala&nbsp;&#353;to <span style="font-family: Helvetica,Arial,sans-serif;">Vas zanima </span></span><span style="font-family: Helvetica,Arial,sans-serif;">doista
+izuzetan prostor koji se u Ilici nadvija nad ulaz u De&#382;manov prolaz. <br>
+<br>
+Kao
+&#353;to mo&#382;ete vidjeti, u Zagrebu je jedva mogu&#263;e na&#263;i prostor koji bi
+toliko bio u sredi&#353;tu, a da je izuzetno lako dostupan. On je prakti&#269;no
+na samoj tramvajskoj postaji Frankopanska, a istovremeno samo par
+koraka od &#269;ak dvije javne gara&#382;e: u Tu&#353;kancu i tek preko puta ne&#353;to
+ni&#382;e u Ilici. Zapravo, planira se gradnja i tre&#263;e - kod Hrvatskog
+Narodnog Kazali&#353;ta.<br><br>
+</span>
+<div style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;"><img style="width: 762px; height: 424px;" alt="Pogled na prostor iz Frankopanske" src="pictures/ilica.jpg">
+&nbsp; &nbsp; &nbsp; &nbsp;<img style="width: 762px; height: 426px;" alt="Pogled na prostor iz De&#382;manovog prolaza" src="pictures/dezmanov.jpg"></span><br>
+<span style="font-family: Helvetica,Arial,sans-serif;"></span></div>
+<span style="font-family: Helvetica,Arial,sans-serif;"><br>
+Prostor
+je dugo vremena slu&#382;io kao stan, ali pravi potencijal mu le&#382;i kao
+prostor kojem je brzo i lako mogu&#263;e pristupiti. To mo&#382;e biti mnogo
+toga: veoma prostran odvjetni&#269;ki ili drugi ured, predstavni&#353;tvo,
+lije&#269;ni&#269;ka ordinacija... Po lokaciji je idealan i za bilo kakav
+kulturni i turisti&#269;ki sadr&#382;aj, kao galerija, mo&#382;da i klub ili
+radionica... No sigurno ve&#263; i Vi imate veoma dobru ideju, &#269;emu bi mogao
+poslu&#382;iti.<br>
+<br>
+</span>
+<h2><span style="font-family: Helvetica,Arial,sans-serif;">Prostorije</span></h2>
+<span style="font-family: Helvetica,Arial,sans-serif;"></span>
+<div style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;"><img style="width: 762px; height: 430px;" alt="Prednje prostorije prema Ilici" src="pictures/01.jpg">&nbsp;</span><span style="font-family: Helvetica,Arial,sans-serif;"> &nbsp;
+&nbsp;&nbsp; &nbsp;</span><img style="width: 762px; height: 430px;" alt="Prostorije prema Ilici iz drugog ugla" src="pictures/02.jpg"><br>
+</div>
+<br>
+<div style="text-align: center;"><img style="width: 762px; height: 430px;" alt="Pogled prema prostoru u Ilici" src="pictures/03.jpg">
+&nbsp; &nbsp; &nbsp; &nbsp; <img style="width: 762px; height: 430px;" alt="Hodnik s pogledom na De&#382;manov" src="pictures/05.jpg"><br>
+</div>
+<br>
+<div style="text-align: center;"><img style="width: 762px; height: 430px;" alt="Jedna od me&#273;uprostorija" src="pictures/04.jpg">
+&nbsp; &nbsp; &nbsp; &nbsp; <img style="width: 762px; height: 430px;" alt="Pogled na hodnik iz jedne od me&#273;uprostorija" src="pictures/06.jpg"><br>
+</div>
+<br>
+<span style="font-family: Helvetica,Arial,sans-serif;">Prostor
+je podjeljen u 7 prostorija uz prostore koji su slu&#382;ili kao kupaonica i
+kuhinja. No &#269;ini se kako je ve&#263; i graditelj taj prostor prije svega
+vidio kao poslovni prostor: zapravo su tu dva nu&#382;nika, dakle mu&#353;ki i
+&#382;enski&nbsp; - zasebni prozor&#269;i&#263;i im se vide iz De&#382;manovog prolaza,
+makar je samo jedan od njih trenutno u funkciji.<br>
+<br>
+</span>
+<h2><span style="font-family: Helvetica,Arial,sans-serif;">Tlocrt
+i stabilnost</span></h2>
+<div style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;</span><img src="pictures/Nacrt.jpg" alt="dio nacrta Ilice 40" style="width: 1800px; height: 1418px;"><br>
+</div>
+<br>
+<span style="font-family: Helvetica,Arial,sans-serif;">Svatko
+tko razmi&#353;lja o akviziciji nekretnine u Zagrebu svakako misli i na
+nedavne potrese i &#353;tetu koju su oni na&#269;inili. No i stari majstori su
+znali kako se solidno gradi ku&#263;a: u planu vidite kako je gradnja ove
+zgrade po&#269;ela jo&#353; 1873. i u nju je useljeno 1876. To zna&#269;i da je &#269;itava
+zgrada lako izdr&#382;ala ne samo potres 2020. - odnosno i onaj u prosincu
+2021. kad se i iz Petrinje treslo i u Zagrebu, nego i povijesni potres
+1880. godine.<br>
+<br>
+</span>
+<div style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;"><img style="width: 762px; height: 487px;" alt="Povijesna razglednica Zagreba" src="pictures/1000925.jpg">
+&nbsp; &nbsp; &nbsp;&nbsp;<img style="width: 762px; height: 430px;" alt="Prolaz u De&#382;manov" src="pictures/20251007_100100.jpg"></span><br>
+<span style="font-family: Helvetica,Arial,sans-serif;"></span></div>
+<span style="font-family: Helvetica,Arial,sans-serif;"><br>
+Na
+razglednici s po&#269;etka XX. stolje&#263;a zgrada ve&#263; stoji, a makar su isti
+arhitekti napravili i prakti&#269;no &#269;itav po&#269;etak De&#382;manovog prolaza,
+neobarokna fasada prema Ilici je o&#269;ito bio tek ustupak gradskim ocima.
+Naime ove grede koje vidite na stropu prolaza su redom armirani beton,
+jer je o&#269;ito i njihova sklonost bila prije prema moderni i u stilu i u
+tehnici - &#353;to se prekrasno vidi u De&#382;manovom prolazu i na toj strani
+zgrade. No i poslovni prostori u prizemlju su oja&#269;ani brojnim
+lukovima&nbsp;u klasi&#269;nom obliku gradnje &#353;to je dokaz solidnosti
+&#269;itave
+zgrade. <br>
+<br>
+Obzirom na namjenu koju ste zamislili za taj prostor,
+mo&#382;da &#263;ete po&#382;eljeti ukloniti neke od pregradnih zidova. Vlasnik
+apartmana na drugom katu zgrade je doista i bitno promijenio raspored
+prostorija, no naravno da bismo Vam to savjetovali tek uz stru&#269;ni
+nadzor.<br>
+<br>
+</span>
+<h2><span style="font-family: Helvetica,Arial,sans-serif;">Cijena
+i kontakt</span></h2>
+<h2 style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;"></span><img style="width: 762px; height: 429px;" alt="Pogled na Frankopansku" src="pictures/20250919_094343.jpg">
+&nbsp; &nbsp; &nbsp;<img style="width: 762px; height: 430px;" alt="Pogled na De&#382;manov sa terase" src="pictures/20251007_114243.jpg"></h2>
+<span style="font-family: Helvetica,Arial,sans-serif;">Povijesna
+fotografija svjedo&#269;i da je pod ovim prozorima prolazio jo&#353; Franjo Josip
+na otvorenje HNK-a, a naviknut &#263;ete se da "o&#269;i u o&#269;i" sa Va&#353;ih prozora
+promatrate sve dr&#382;avne goste u Hrvatsku koji redom dolaze kroz
+Frankopansku, nebrojene Zagrep&#269;anke i Zagrep&#269;ane koji tu prolaze svaki
+dan, da o turistima i ne govorimo - i isto tako bi svi oni vidjeli Vas
+i Va&#353; prostor. No isto tako biste imali posve svoj komadi&#263; De&#382;manovog
+prolaza na terasi kojoj je pristup samo iz ovog prostora.<br style="font-family: Helvetica,Arial,sans-serif;">
+<br style="font-family: Helvetica,Arial,sans-serif;">
+</span><span style="font-size: 12pt; line-height: 150%; font-family: Helvetica,Arial,sans-serif;" lang="HR">Vlasni&#353;tvo
+je
+potpuno &#269;isto, a prostor odmah raspolo&#382;iv. Svemu tome &nbsp;se
+mo&#382;da
+mo&#382;e dodati i kako zgrada jo&#353; nije eta&#382;irana: to se najprije odnosi na
+potkrovlje koji se tek manjim dijelom koristi za apartmane. No obzirom
+na povr&#353;inu ovog prostora, izvjesno je kako bi mu pripadao i odre&#273;en
+dio tavana: oba krila potkrovlja zgrade u De&#382;manov prolaz su trenutno
+neiskori&#353;tena.<br>
+<br>
+</span><span style="font-family: Helvetica,Arial,sans-serif;">Cijena
+ovakvog prostora naravno da ne&#263;e biti manja od prosje&#269;ne cijene
+&#269;etvornog metra u srcu Zagreba, ali ako ste zainteresirani, pozivamo
+Vas da najprije zajedno obi&#273;emo prostorije i da vidimo, mo&#382;emo li
+posti&#263;i dogovor.Prostor je na prodaju bez posrednika, nego uz pomo&#263;
+odvjetni&#269;kog ureda koji je svakako i jamac korektnog poslovnog dogovora.<br>
+<br>
+Sve dodatne informacije i dogovor za obilazak mo&#382;ete dogovoriti preko
+elektroni&#269;ke po&#353;te <span style="font-weight: bold;">moj-novi-prostor@proton.me</span></span><span style="font-family: Helvetica,Arial,sans-serif;"></span><span style="font-family: Helvetica,Arial,sans-serif;"><br>
+&nbsp;<br>
+</span>
+</body></html>
