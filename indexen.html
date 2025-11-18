@@ -1,6 +1,34 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head>
-<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>index</title></head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Appartment in Ilica 40</title>
+<style>
+/* POČETAK RESPONSIVE MULTI-ROW GALERIJA CSS */
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;       /* razmak između slika i redova */
+  margin-bottom: 30px;
+}
+
+.image-row a {
+  flex: 1 1 45%;   /* maksimalno dvije slike po redu na velikom ekranu */
+  max-width: 45%;
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* KRAJ RESPONSIVE MULTI-ROW GALERIJA CSS */
+
+</style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+
+</head>
 <body style="background-color: rgb(255, 251, 226); color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#551a8b">
 <!-- Jezi&#269;ne ikone -->
 <div style="padding: 10px; text-align: right;">
@@ -45,11 +73,18 @@ across the street a little further down in Ilica. In fact, construction
 of a third one is being planned &#8211; near the Croatian National Theatre.</p>
 <span style="font-family: Helvetica,Arial,sans-serif;"><br>
 </span>
-<div style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;"><img style="width: 762px; height: 424px;" alt="Pogled na prostor iz Frankopanske" src="pictures/ilica.jpg">&nbsp;
-&nbsp; &nbsp; &nbsp;<img style="width: 762px; height: 426px;" alt="Pogled na prostor iz De&#382;manovog prolaza" src="pictures/dezmanov.jpg"></span><br>
-<span style="font-family: Helvetica,Arial,sans-serif;"></span></div>
-<span style="font-family: Helvetica,Arial,sans-serif;"><br>
-</span><br>
+    <!-- POČETAK GALERIJA -->
+<div class="image-row">
+  <a href="pictures/ilica.jpg" data-lightbox="galerija">
+    <img src="pictures/ilica.jpg" alt="Pogled na prostor iz Frankopanske">
+  </a>
+  <a href="pictures/dezmanov.jpg" data-lightbox="galerija">
+    <img src="pictures/dezmanov.jpg" alt="Pogled na prostor iz Dežmanovog prolaza">
+  </a>
+  <!-- Dodaj ovdje još <a> sa slikama za galeriju ako želiš -->
+</div>
+<!-- KRAJ GALERIJA -->
+<br>
 <span style="" lang="EN-US"><span style="font-family: Helvetica,Arial,sans-serif;">The space
 has long served as an apartment, but its true potential lies in
 being business premises that can be accessed quickly and easily. It can
@@ -60,20 +95,33 @@ doctor&#8217;s practice&#8230; By its location it is also ideal for any kind of
 cultural
 and tourist use, such as a gallery, perhaps even a club or a workshop&#8230;
 But
-surely you already have a very good idea of what it could be used for.</span><o:p></o:p></span>
-<h2><b style="font-family: Helvetica,Arial,sans-serif;">Rooms</b><span style=""><o:p></o:p></span></h2>
-<span style="font-family: Helvetica,Arial,sans-serif;"></span>
-<div style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;"><img style="width: 762px; height: 430px;" alt="Prednje prostorije prema Ilici" src="pictures/01.jpg">&nbsp;</span><span style="font-family: Helvetica,Arial,sans-serif;"> &nbsp;
-&nbsp;&nbsp; &nbsp;</span><img style="width: 762px; height: 430px;" alt="Prostorije prema Ilici iz drugog ugla" src="pictures/02.jpg"><br>
+surely you already have a very good idea of what it could be used for.</span>
+    <br>
+    <!-- POČETAK GALERIJA PROSTORIJA -->
+<h2 style="font-family: Helvetica,Arial,sans-serif;">Prostorije</h2>
+
+<div class="image-row">
+  <a href="pictures/01.jpg" data-lightbox="prostorije">
+    <img src="pictures/01.jpg" alt="Prednje prostorije prema Ilici">
+  </a>
+  <a href="pictures/02.jpg" data-lightbox="prostorije">
+    <img src="pictures/02.jpg" alt="Prostorije prema Ilici iz drugog ugla">
+  </a>
+  <a href="pictures/03.jpg" data-lightbox="prostorije">
+    <img src="pictures/03.jpg" alt="Pogled prema prostoru u Ilici">
+  </a>
+  <a href="pictures/05.jpg" data-lightbox="prostorije">
+    <img src="pictures/05.jpg" alt="Hodnik s pogledom na Dežmanov">
+  </a>
+  <a href="pictures/04.jpg" data-lightbox="prostorije">
+    <img src="pictures/04.jpg" alt="Jedna od međuprostorija">
+  </a>
+  <a href="pictures/06.jpg" data-lightbox="prostorije">
+    <img src="pictures/06.jpg" alt="Pogled na hodnik iz jedne od međuprostorija">
+  </a>
 </div>
-<br>
-<div style="text-align: center;"><img style="width: 762px; height: 430px;" alt="Pogled prema prostoru u Ilici" src="pictures/03.jpg">
-&nbsp; &nbsp; &nbsp; &nbsp; <img style="width: 762px; height: 430px;" alt="Hodnik s pogledom na De&#382;manov" src="pictures/05.jpg"><br>
-</div>
-<br>
-<div style="text-align: center;"><img style="width: 762px; height: 430px;" alt="Jedna od me&#273;uprostorija" src="pictures/04.jpg">
-&nbsp; &nbsp; &nbsp; &nbsp; <img style="width: 762px; height: 430px;" alt="Pogled na hodnik iz jedne od me&#273;uprostorija" src="pictures/06.jpg"><br>
-</div>
+<!-- KRAJ GALERIJA PROSTORIJA -->
+
 <br>
 <span style="font-family: Helvetica,Arial,sans-serif;">The
 space is
@@ -96,12 +144,18 @@ and it was inhabited in 1876. This means that the entire building
 easily withstood not only the earthquake of 2020 &#8212; and the one in
 December 2021, when the tremors from Petrinja were also felt in Zagreb
 &#8212; but also the historic earthquake of 1880.</span><br>
-<br>
-<div style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;"><img style="width: 762px; height: 487px;" alt="Povijesna razglednica Zagreba" src="pictures/1000925.jpg">
-&nbsp; &nbsp; &nbsp;&nbsp;<img style="width: 762px; height: 430px;" alt="Prolaz u De&#382;manov" src="pictures/20251007_100100.jpg"></span><br>
-<span style="font-family: Helvetica,Arial,sans-serif;"></span></div>
-<span style="font-family: Helvetica,Arial,sans-serif;"><br>
-</span><br>
+<br> <!-- POČETAK 3 REDA FOTKI -->
+<div class="image-row">
+  <a href="pictures/1000925.jpg" data-lightbox="galerija">
+    <img src="pictures/1000925.jpg" alt="Povijesna razglednica Zagreba">
+  </a>
+  <a href="pictures/20251007_100100.jpg" data-lightbox="galerija">
+    <img src="pictures/20251007_100100.jpg" alt="Prolaz u De&#382;manov">
+  </a>
+  <!-- Dodaj ovdje još <a> sa slikama za galeriju ako želiš -->
+</div>
+<!-- KRAJ 3 REDA FOTKI -->
+    <br>
 <span style="font-family: Helvetica,Arial,sans-serif;">On
 a postcard from the beginning of the 20th century the building is
 already standing, and although the same architects also designed
@@ -123,9 +177,17 @@ second floor of the building has indeed significantly altered the
 layout of the rooms, but of course we would recommend doing so only
 under professional supervision.</span>
 <h2 style="font-family: Helvetica,Arial,sans-serif;"><strong data-start="1137" data-end="1158">Price and contact</strong></h2>
-<h2 style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;"></span><img style="width: 762px; height: 429px;" alt="Pogled na Frankopansku" src="pictures/20250919_094343.jpg">&nbsp;
-&nbsp; &nbsp;<img style="width: 762px; height: 430px;" alt="Pogled na De&#382;manov sa terase" src="pictures/20251007_114243.jpg"></h2>
-<span style="font-family: Helvetica,Arial,sans-serif;"></span><br>
+<!-- POČETAK 4 REDA FOTKI -->
+<div class="image-row">
+  <a href="pictures/20250919_094343.jpg" data-lightbox="galerija">
+    <img src="pictures/20250919_094343.jpg" alt="Pogled na Frankopansku">
+  </a>
+  <a href="pictures/20251007_114243.jpg" data-lightbox="galerija">
+    <img src="pictures/20251007_114243.jpg" alt="Pogled na De&#382;manov sa terase">
+  </a>
+  <!-- Dodaj ovdje još <a> sa slikama za galeriju ako želiš -->
+</div>
+<!-- KRAJ 4 REDA FOTKI --><br>
 <span style="font-family: Helvetica,Arial,sans-serif;">This historical photograph testifies that even <span style="font-style: italic;">Kaiser und König</span> Franz Joseph passed under
 these windows for the opening of the Croatian National Theatre, and you
 will get used to the fact that &#8220;eye to eye&#8221; from your windows you will
@@ -164,4 +226,5 @@ email at <a href="mailto:moj-novi-prostor@proton.me" style="font-weight: bold; f
 </a><br>
 
 </body></html>
+
 
