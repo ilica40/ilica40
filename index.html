@@ -3,27 +3,29 @@
 <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>index</title>
 <style>
 /* POČETAK RESPONSIVE MULTI-ROW GALERIJA CSS */
-.image-row {
+.gallery {
   display: flex;
-  flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
-  gap: 20px;       /* razmak između slika i redova */
-  margin-bottom: 30px;
+  align-items: flex-start; /* bolje za različite visine slika */
+  flex-wrap: wrap;
 }
 
-.image-row a {
-  flex: 1 1 45%;   /* maksimalno dvije slike po redu na velikom ekranu */
-  max-width: 45%;
-}
-
-.image-row img {
+.gallery img {
   width: 100%;
+  max-width: 400px; /* svaka slika maksimalno 400px */
   height: auto;
   display: block;
 }
 
+/* mobilni layout: ispod 400px slike idu u jedan stupac */
+@media (max-width: 400px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* KRAJ RESPONSIVE MULTI-ROW GALERIJA CSS */
-
 </style>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
@@ -131,9 +133,8 @@ makar je samo jedan od njih trenutno u funkciji.<br>
 <br>
 </span>
 <h2><span style="font-family: Helvetica,Arial,sans-serif;">Tlocrt
-i stabilnost</span></h2>
-<div style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;</span><img src="pictures/Nacrt.jpg" alt="dio nacrta Ilice 40" style="width: 1800px; height: 1418px;"><br>
-</div>
+i stabilnost</span></h2><br>
+<div style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;</span><img src="pictures/Nacrt.jpg" alt="dio nacrta Ilice 40" style="max-width:100%; height:auto;"
 <br>
 <span style="font-family: Helvetica,Arial,sans-serif;">Svatko
 tko razmi&#353;lja o akviziciji nekretnine u Zagrebu svakako misli i na
@@ -228,6 +229,7 @@ elektroni&#269;ke po&#353;te
 </span>
 
 </body></html>
+
 
 
 
