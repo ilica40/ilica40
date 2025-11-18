@@ -1,27 +1,34 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head>
 <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Appartment in Ilica 40</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 /* POČETAK RESPONSIVE MULTI-ROW GALERIJA CSS */
-.image-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;       /* razmak između slika i redova */
-  margin-bottom: 30px;
-}
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
 
-.image-row a {
-  flex: 1 1 45%;   /* maksimalno dvije slike po redu na velikom ekranu */
-  max-width: 45%;
-}
+    .image-row a {
+      flex: 1 1 45%;
+      max-width: 45%;
+    }
 
-.image-row img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+    .image-row img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
+    @media (max-width: 480px) {
+      .image-row a {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
 /* KRAJ RESPONSIVE MULTI-ROW GALERIJA CSS */
 
 </style>
@@ -132,8 +139,7 @@ male and female &#8212; their separate small windows can be seen from
 De&#382;manov Prolaz, although only one of them is currently in use.</span>
 <h2 style="font-family: Helvetica,Arial,sans-serif;"><strong data-start="422" data-end="461">Floor plan and
 structural stability</strong></h2>
-<div style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;</span><img src="pictures/Nacrt.jpg" alt="dio nacrta Ilice 40" style="width: 1800px; height: 1418px;"><br>
-</div>
+<div style="text-align: center;"><span style="font-family: Helvetica,Arial,sans-serif;">&nbsp;</span><img src="pictures/Nacrt.jpg" alt="dio nacrta Ilice 40" style="max-width:100%; height:auto;"
 <br>
 <span style="font-family: Helvetica,Arial,sans-serif;">Anyone
 considering the acquisition of real estate in Zagreb is certainly also
@@ -226,5 +232,6 @@ email at <a href="mailto:moj-novi-prostor@proton.me" style="font-weight: bold; f
 </a><br>
 
 </body></html>
+
 
 
