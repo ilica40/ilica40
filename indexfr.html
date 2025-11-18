@@ -5,24 +5,33 @@
 /* POČETAK RESPONSIVE MULTI-ROW GALERIJA CSS */
 .gallery {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  align-items: flex-start; /* bolje za različite visine slika */
-  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.gallery a {
+  /* flex-item ograničenje širine */
+  flex: 1 1 400px; /* raste, skuplja se, početna širina 400px */
+  max-width: 400px;
 }
 
 .gallery img {
-  width: 100%;
-  max-width: 400px; /* svaka slika maksimalno 400px */
+  width: 100%; /* sada unutar a, raste prema a */
   height: auto;
   display: block;
 }
 
-/* mobilni layout: ispod 400px slike idu u jedan stupac */
+/* mobilni layout ispod 400px */
 @media (max-width: 400px) {
   .gallery {
     flex-direction: column;
     align-items: center;
+  }
+  .gallery a {
+    flex: none;
+    max-width: 100%;
   }
 }
 /* KRAJ RESPONSIVE MULTI-ROW GALERIJA CSS */
@@ -224,6 +233,7 @@ rendez-vous pour une visite peuvent se faire par e-mail à <a href="mailto:moj-n
 </span>
 
 </body></html>
+
 
 
 
