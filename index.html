@@ -3,36 +3,31 @@
 <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>index</title>
 <style>
 /* POČETAK RESPONSIVE MULTI-ROW GALERIJA CSS */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  align-items: flex-start;
-}
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
 
-.gallery a {
-  flex: 1 1 calc(50% - 0.5rem); /* dva stupca, minus gap */
-  max-width: 400px; /* maksimalna širina slike */
-}
+    .image-row a {
+      flex: 1 1 45%;
+      max-width: 45%;
+    }
 
-.gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+    .image-row img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-/* mobilni layout ispod 400px */
-@media (max-width: 400px) {
-  .gallery {
-    flex-direction: column;
-    align-items: center;
-  }
-  .gallery a {
-    flex: none;
-    max-width: 100%;
-  }
-}
+    @media (max-width: 400px) {
+      .image-row a {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
 /* KRAJ RESPONSIVE MULTI-ROW GALERIJA CSS */
 </style>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
@@ -237,6 +232,7 @@ elektroni&#269;ke po&#353;te
 </span>
 
 </body></html>
+
 
 
 
