@@ -7,23 +7,24 @@
   display: flex;
   gap: 1rem;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* bolje za različite visine slika */
   flex-wrap: wrap;
 }
 
+.gallery img {
+  width: 100%;
+  max-width: 400px; /* svaka slika maksimalno 400px */
+  height: auto;
+  display: block;
+}
+
+/* mobilni layout: ispod 400px slike idu u jedan stupac */
 @media (max-width: 400px) {
   .gallery {
     flex-direction: column;
     align-items: center;
   }
 }
-
-.gallery img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 /* KRAJ RESPONSIVE MULTI-ROW GALERIJA CSS */
 </style>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
@@ -223,6 +224,7 @@ rendez-vous pour une visite peuvent se faire par e-mail à <a href="mailto:moj-n
 </span>
 
 </body></html>
+
 
 
 
