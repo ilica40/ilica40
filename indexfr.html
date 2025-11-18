@@ -12,13 +12,12 @@
 }
 
 .gallery a {
-  /* flex-item ograničenje širine */
-  flex: 1 1 400px; /* raste, skuplja se, početna širina 400px */
-  max-width: 400px;
+  flex: 1 1 calc(50% - 0.5rem); /* dva stupca, minus gap */
+  max-width: 400px; /* maksimalna širina slike */
 }
 
 .gallery img {
-  width: 100%; /* sada unutar a, raste prema a */
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -233,6 +232,7 @@ rendez-vous pour une visite peuvent se faire par e-mail à <a href="mailto:moj-n
 </span>
 
 </body></html>
+
 
 
 
