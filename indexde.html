@@ -227,7 +227,22 @@ wissen als jeder Computer.<span style="" lang="HR"><o:p></o:p></span></p>
 <p class="MsoNormal"><span style="font-family: &quot;Arial&quot;,&quot;sans-serif&quot;;"><o:p>&nbsp;</o:p></span></p>
 <span style="font-family: Helvetica,Arial,sans-serif;">
 </span></div>
+
+  <script>
+function fixText(node) {
+  if (node.nodeType === Node.TEXT_NODE) {
+    node.nodeValue = decodeURIComponent(escape(node.nodeValue));
+  } else {
+    node.childNodes.forEach(fixText);
+  }
+}
+
+// Pokreni na cijelom body-u
+fixText(document.body);
+</script>
+
 </body></html>
+
 
 
 
